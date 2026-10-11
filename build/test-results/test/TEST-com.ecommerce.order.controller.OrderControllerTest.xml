@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ecommerce.order.controller.OrderControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-11T10:03:20.465Z" hostname="DESKTOP-M4L6TBH" time="5.246">
+  <properties/>
+  <testcase name="GET /api/v1/orders/999 - Should return 404 with ApiResponseError format when order does not exist" classname="com.ecommerce.order.controller.OrderControllerTest" time="0.402"/>
+  <system-out><![CDATA[17:03:20.796 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.ecommerce.order.controller.OrderControllerTest]: OrderControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:03:21.066 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.ecommerce.order.OrderApplication for test class com.ecommerce.order.controller.OrderControllerTest
+17:03:21.070 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.ecommerce.order.controller.OrderControllerTest]: OrderControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:03:21.094 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.ecommerce.order.OrderApplication for test class com.ecommerce.order.controller.OrderControllerTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.8)
+
+2026-10-11T17:03:21.856+07:00  INFO 5456 --- [order-service] [    Test worker] c.e.o.controller.OrderControllerTest     : Starting OrderControllerTest using Java 17.0.20.1 with PID 5456 (started by ADM in E:\Dev\JAVA\ex4_ss2_micro)
+2026-10-11T17:03:21.858+07:00 DEBUG 5456 --- [order-service] [    Test worker] c.e.o.controller.OrderControllerTest     : Running with Spring Boot v4.0.8, Spring v7.0.9
+2026-10-11T17:03:21.860+07:00  INFO 5456 --- [order-service] [    Test worker] c.e.o.controller.OrderControllerTest     : No active profile set, falling back to 1 default profile: "default"
+2026-10-11T17:03:25.178+07:00  INFO 5456 --- [order-service] [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-10-11T17:03:25.178+07:00  INFO 5456 --- [order-service] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-10-11T17:03:25.188+07:00  INFO 5456 --- [order-service] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 6 ms
+2026-10-11T17:03:25.280+07:00  INFO 5456 --- [order-service] [    Test worker] c.e.o.controller.OrderControllerTest     : Started OrderControllerTest in 4.048 seconds (process running for 6.525)
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/orders/999
+       Parameters = {}
+          Headers = [Accept:"application/json"]
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.ecommerce.order.controller.OrderController
+           Method = com.ecommerce.order.controller.OrderController#getOrderById(Long)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = com.ecommerce.order.exception.ResourceNotFoundException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"timestamp":"2026-10-11T17:03:25","status":404,"error":"Not Found","message":"Order với ID 999 không tồn tại trên hệ thống!"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
